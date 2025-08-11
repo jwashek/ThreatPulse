@@ -204,7 +204,7 @@ export_threat_report(analyzer)
 • VMware: 4 mentions
 ```
 
-## Professional Use Cases
+## Use Cases
 ### Cybersecurity Interview Preparation
 Perfect demonstration tool for answering:
 - "How do you stay current with threat intelligence?"
