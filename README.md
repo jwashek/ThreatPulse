@@ -5,7 +5,7 @@ ThreatPulse demonstrates advanced OSINT (Open Source Intelligence) capabilities 
 
 ## Core Capabilities
 ### Real-Time OSINT Collection
-- **Government Sources**: CISA cybersecurity advisories and alerts
+- **Industry-Specific Analysis**: Analyzes industries to pinpoint specific threats for a given industry (i.e., Financial, Healthcare, Government, Tech, etc.)
 - **Vulnerability Intelligence**: National Vulnerability Database (NVD) CVE feeds
 - **Security News**: The Hacker News, Krebs on Security, BleepingComputer
 - **Malware Intelligence**: MalwareBazaar API for recent malware samples
@@ -82,6 +82,64 @@ collector, analyzer = run_threat_intelligence_collection()
 [+] Data collection complete!
 [!] Total intelligence points gathered: 82
 ```
+
+### Industry-Specific Analysis:
+**Step-by-Step Usage:**
+1. First, run the main collection:
+```python
+collector, analyzer = run_threat_intelligence_collection()
+```
+2. Then analyze specific industries:
+```python
+# Analyze financial industry threats
+analyze_financial(analyzer)
+```
+
+**Example Output:**
+```bash
+[+] Analyzing Healthcare Industry Threat Landscape...
+
+================================================================================
+[!] HEALTHCARE INDUSTRY THREAT INTELLIGENCE DASHBOARD
+================================================================================
+[!] Generated: xxxx-xx-xx xx:xx:xx UTC
+[!] Industry Focus: Healthcare Sector
+
+[+] HEALTHCARE THREAT LANDSCAPE OVERVIEW
+--------------------------------------------------
+• Industry-Relevant Security News: 3
+• Government Alerts Affecting Sector: 2
+• Threat Actors Targeting Industry: 5
+
+[+] RECENT HEALTHCARE SECURITY INCIDENTS
+--------------------------------------------------
+1. Security Trends in the Healthcare Industry
+   Source: XXX | Published: XXX
+
+
+[!] HEALTHCARE SECTOR SECURITY RECOMMENDATIONS
+--------------------------------------------------
+1. Implement industry-specific threat intelligence feeds
+2. Conduct sector-targeted security awareness training
+3. Deploy industry-appropriate security controls and monitoring
+4. Establish information sharing with industry peers and authorities
+5. Regular assessment of sector-specific compliance requirements
+6. Strengthen HIPAA compliance and patient data protection
+7. Implement medical device security and IoT monitoring
+8. Deploy healthcare-specific ransomware protection
+9. Enhance electronic health record (EHR) security
+10. Establish incident response for patient safety scenarios
+```
+
+**All Industries:**
+* analyze_financial(analyzer) - Financial/Banking
+* analyze_healthcare(analyzer) - Healthcare
+* analyze_technology(analyzer) - Technology
+* analyze_government(analyzer) - Government
+* analyze_energy(analyzer) - Energy/Utilities
+* analyze_manufacturing(analyzer) - Manufacturing
+* analyze_retail(analyzer) - Retail/E-commerce
+* analyze_education(analyzer) - Education
 
 ### Generate Visualizations
 ```python
